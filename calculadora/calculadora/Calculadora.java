@@ -6,13 +6,24 @@ public class Calculadora {
 		return a + b;
 		}
 	
+	public int restar(int a, int b) {
+		return a - b;
+		}
+	
+	public int multiplicar(int a, int b) {
+		return a * b;
+		}
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		Calculadora calc = new Calculadora();
-		System.out.println("Resultado de la suma: " +
-		calc.sumar(5, 3));
+		System.out.println("Resultado de la suma: " + calc.sumar(5, 3));
+		
+		System.out.println("Resultado de la resta: " + calc.restar(5, 3));
+		
+		System.out.println("Resultado de la multiplicación: " + calc.multiplicar(5, 3));
 
 	}
 
